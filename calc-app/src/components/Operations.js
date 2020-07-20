@@ -24,9 +24,9 @@ export const Operations = ({operations}) => {
             <table className="table table-bordered">
                 <thead>
                 <tr>
-                    <th>FirstNumber</th>
+                    <th>First number</th>
                     <th>Operator</th>
-                    <th>SecondNumber</th>
+                    <th>Second number</th>
                     <th>Answer</th>
                 </tr>
                 </thead>

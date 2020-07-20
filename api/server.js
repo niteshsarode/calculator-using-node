@@ -16,7 +16,7 @@ function calculate(operation) {
 	else if(operator == "-")
 		return(firstNumber-secondNumber)
 	else if(operator == "/")
-		return(firstNumber/secondNumber)
+		return(firstNumber/secondNumber).toFixed(2)
 	else if(operator == "*")
 		return(firstNumber*secondNumber)
 }

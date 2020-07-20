@@ -12,19 +12,19 @@ const CreateOperation = ({submitted, operations, onChangeForm, calculateOperatio
                     <div className="row">
                         <div className="form-group col-md-4">
                             { !operations.firstNumber && submitted &&
-                                <label>First number is requried!</label>
+                                <label className="error">First number is requried!</label>
                             }
                             {  (!submitted || operations.firstNumber) &&
-                                <label>First number</label>
+                                <label>First number*</label>
                             }
                             <input type="number" onChange={(e) => onChangeForm(e)}  className="form-control" name="firstnumber" id="firstnumber" placeholder="Enter first number" />
                         </div>
                         <div className="form-group col-md-2">
                             { !operations.operator && submitted &&
-                                <label>Operator is requried!</label>
+                                <label className="error">Operator is requried!</label>
                             }
                             { (!submitted || operations.operator) &&
-                                <label>Operator</label>
+                                <label>Operator*</label>
                             }
                             <select id="operator" name="operator" onChange={(e) => onChangeForm(e)} className="form-control">
                                 <option value="select" defaultValue>Select</option>
@@ -36,10 +36,10 @@ const CreateOperation = ({submitted, operations, onChangeForm, calculateOperatio
                         </div>
                         <div className="form-group col-md-4">
                             { !operations.secondNumber && submitted &&
-                                <label>Second number is requried!</label>
+                                <label className="error">Second number is requried!</label>
                             }
                             {  (!submitted || operations.secondNumber) &&
-                                <label>Second number</label>
+                                <label>Second number*</label>
                             }
                             <input type="number" onChange={(e) => onChangeForm(e)} className="form-control" name="secondnumber" id="secondnumber" placeholder="Enter second number" />
                         </div>

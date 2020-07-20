@@ -31,3 +31,7 @@
 .formClass {
   margin-top: 50px;
 }
+
+.error {
+  color: crimson;
+}
