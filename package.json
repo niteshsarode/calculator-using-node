@@ -6,6 +6,7 @@
   "scripts": {
 	"start": "node server.bundle.js",
 	"build": "webpack",
+	"heroku-postbuild": "cd calc-app && npm && npm run build",
 	"dev": "nodemon ./server.js localhost 3080"
   },
   "dependencies": {
