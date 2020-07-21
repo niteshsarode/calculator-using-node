@@ -22,7 +22,7 @@ function calculate(operation) {
 }
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../sezzle-calculato/calc-app/build')));
+app.use(express.static(path.join(__dirname, 'calc-app/build')));
 
 app.get('/api/operations', (req, res) => {
 	console.log('api/operations called!')
@@ -38,7 +38,7 @@ app.post('/api/calculate', (req, res) => {
 });
 
 app.get('/', (req,res) => {
-	res.sendFile(path.join(__dirname, '../sezzle-calculato/calc-app/build/index.html'));
+	res.sendFile(path.join(__dirname, 'calc-app/build/index.html'));
 });
 
 app.listen(port, () => {
