@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
 	"start": "node server.bundle.js",
-	"postinstall": "cd calc-app && npm install && npm run build"
+	"postinstall": "cd calc-app && npm install && npm run build && serve -s build"
   },
   "dependencies": {
 	"express": "^4.17.1",
